@@ -54,6 +54,8 @@ void task2(long long* from, long long* to, int size) {
     }
   }
 
+  free(ranges);
+
   res += (currTo - currFrom + 1);
 
   printf("%lld\n", res);
